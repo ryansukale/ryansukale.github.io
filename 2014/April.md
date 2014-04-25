@@ -1,4 +1,4 @@
-**[ < - Back To Home](../index.html)**
+**[ < - Back To Home](http://ryansukale.github.io)**
 
 ## Wanderings and learnings : April 2014
 ### Apr 25
