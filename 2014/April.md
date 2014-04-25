@@ -1,6 +1,9 @@
 **[ < - Back To Home](../index.html)**
 
 ## Wanderings and learnings : April 2014
+### Apr 25
+----
+1. Setup my first user github pages for publishing this journal at [ryansukale.github.io](ryansukale.github.io)
 
 ### Apr 24
 ----

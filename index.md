@@ -6,4 +6,4 @@ No matter what, there will always be things that I dont know, things that I will
 ----
 |Month|Summary|
 |----|----|
-|**[April 2014](./2014/April.html)** | *Coming soon* |
+|**[April 2014](http://ryansukale.github.io/2014/April.html)** | *Coming soon* |
