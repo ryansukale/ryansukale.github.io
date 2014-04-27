@@ -1,9 +1,20 @@
 **[ < - Back To Home](http://ryansukale.github.io)**
 
 ## Wanderings and learnings : April 2014
+
+### Apr 27
+----
+1. Continued work on [xnode](https://github.com/ryansukale/xnode). Realized that the new version of expressjs does quite a few things differently. E.g. as per [this blog post](http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html), you are not supposed to use [bodyParser](https://github.com/expressjs/body-parser) middleware directly and suggests to use json and urlEncoded instead. These were old recommendations. The new bodyparser uses just json and urlencoded and therfore it is safe to use bodyParser again.
+2. [This link](http://scotch.io/bar-talk/expressjs-4-0-new-features-and-upgrading-from-3-0#removed-bundled-middleware) has a neat table of all the middleware that you will now need to explicitly require for your application since express no longer depends on connect.
+3. [Express router](http://expressjs.com/4x/api.html#router) seems to be much more neat.
+4. When you test your REST API in Postman, just **remember** to use the xxx-form-urlencoded instead of form-data, or your POST data will not show up in req.body in express.
+5. Expressjs has a pretty cool [History.md](https://github.com/visionmedia/express/blob/master/History.md) file. I added the same to [xnode](https://github.com/ryansukale/xnode).
+6. An express router can take multiple callbacks as arguments before the actual handler function is executed. This is quite similar to middlware execution, except for the fact that it can be made more route specific. Within each callback, invoking next() calls the next callback, and calling next('router') skips the subsequent callbacks and directy calls the final handler.
+
 ### Apr 25
 ----
 1. Setup my first user github pages for publishing this journal at [ryansukale.github.io](http://ryansukale.github.io/)
+2. Said hi to markdown tables :)
 
 ### Apr 24
 ----
@@ -12,7 +23,7 @@
 * Faced a cool error `Module name has not been loaded yet for context:_`. This happens when you `require('moduleName')` a module that was not already loaded as part of the dependencies. As a solution, you use the `require([],function(){})` syntax instead. [Here's](http://stackoverflow.com/questions/21420449/requirejs-module-name-has-not-been-loaded-yet-for-context-but-only-for-some) an SO question that talks more about this problem.
 * You dont need to require 'require' as a module. If you are using requirejs, you already have access to require from inside your module functions. When in doubt you can stil do it [this way](https://groups.google.com/d/msg/backbone-marionette/FCertEfVzxc/UClsKsSlb58J).
 * Marionette application does not have a before:start event. Only modules have that. Damn it, i wasted so much time wondering what I was doing wrong.
-* Was setting up the [enode](https://github.com/ryansukale/enode) project. And thats when I realized that many of the utilities like methodOverride, json etc now need to be imported as independent packages.
+* Was setting up the [xnode](https://github.com/ryansukale/xnode) project. And thats when I realized that many of the utilities like methodOverride, json etc now need to be imported as independent packages.
 
 ### Apr 23
 ----
