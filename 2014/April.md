@@ -2,6 +2,15 @@
 
 ## Wanderings and learnings : April 2014
 
+### Apr 28
+----
+1. Attempted to [visualize OAUTH 2](http://ryansukale.com/viz/oauth.svg) . I found the articles [here](http://hueniverse.com/oauth/guide/workflow/) and [here](http://goo.gl/3kDzeZ) pretty useful.
+* Switched from using Filezilla for connecting to Godaddy to WinSCP.
+* Revised the [Mediator pattern](http://addyosmani.com/resources/essentialjsdesignpatterns/book/#mediatorpatternjavascript) since it was mentioned in the [Marionette Controller](https://github.com/marionettejs/backbone.marionette/wiki/Using-a-controller-to-change-content-in-a-marionette.layout) example.
+* Also read about the [differences between a Region and a Layout](https://github.com/marionettejs/backbone.marionette/wiki/The-relationship-between-regions-and-layouts) and what they are intended for.
+* I really love the way Marionette forces you to think modular.
+
+
 ### Apr 27
 ----
 1. Continued work on [xnode](https://github.com/ryansukale/xnode). Realized that the new version of expressjs does quite a few things differently. E.g. as per [this blog post](http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html), you are not supposed to use [bodyParser](https://github.com/expressjs/body-parser) middleware directly and suggests to use json and urlEncoded instead. These were old recommendations. The new bodyparser uses just json and urlencoded and therfore it is safe to use bodyParser again.
