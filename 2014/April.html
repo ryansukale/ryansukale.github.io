@@ -754,6 +754,13 @@ body .task-list{
 <a name="user-content-wanderings-and-learnings--april-2014" class="anchor" href="#wanderings-and-learnings--april-2014"><span class="octicon octicon-link"></span></a>Wanderings and learnings : April 2014</h2>
 
 <h3>
+<a name="user-content-apr-29" class="anchor" href="#apr-29"><span class="octicon octicon-link"></span></a>Apr 29</h3>
+
+<hr><ol>
+<li>After getting a feeling that I was simply overloading the simplicity of <a href="https://github.com/ryansukale/bootcamp">bootcamp</a> by adding marionettejs to it, I decided to shift the marionettejs branch to a whole new repository. Marionettejs is really good for building large scale SPA and if you are simply creating a moderately sized application, you should not have to use all of the default setup of marionette objects. Hence is born - <a href="https://github.com/ryansukale/bootnette">bootnette</a>. A spin off from bootcamp which draws upon bootcamp and extends it for integration with marionettejs. I am not sure what this project will finally evolve into, but I hope it at least turns into a good chunk of reusable code and patterns that can be used in many marionettjs/bootstrap based SPA's.</li>
+<li>The App in marionettjs is analogous to a globa object. Its all knowing, and is the place where you need to identify "regions". These regions are then passed around to controllers who are aware of what to display in those regions. However, as per <a href="https://www.youtube.com/watch?v=qWr7x9wk6_c">Brian Mann's</a> brilliant video, it seems that the controller is meant to live within an app module and is the place where you would end up writing most of your code.</li>
+<li>Integrated <a href="http://handlebarsjs.com/">handlebars</a> into bootnette. Best practices guide that you should not emebed script like code in your markup. That makes underscore templating a big no no.</li>
+</ol><h3>
 <a name="user-content-apr-28" class="anchor" href="#apr-28"><span class="octicon octicon-link"></span></a>Apr 28</h3>
 
 <hr><ol>

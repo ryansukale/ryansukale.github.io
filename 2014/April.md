@@ -2,6 +2,12 @@
 
 ## Wanderings and learnings : April 2014
 
+### Apr 29
+----
+1. After getting a feeling that I was simply overloading the simplicity of [bootcamp](https://github.com/ryansukale/bootcamp) by adding marionettejs to it, I decided to shift the marionettejs branch to a whole new repository. Marionettejs is really good for building large scale SPA and if you are simply creating a moderately sized application, you should not have to use all of the default setup of marionette objects. Hence is born - [bootnette](https://github.com/ryansukale/bootnette). A spin off from bootcamp which draws upon bootcamp and extends it for integration with marionettejs. I am not sure what this project will finally evolve into, but I hope it at least turns into a good chunk of reusable code and patterns that can be used in many marionettjs/bootstrap based SPA's.
+2. The App in marionettjs is analogous to a globa object. Its all knowing, and is the place where you need to identify "regions". These regions are then passed around to controllers who are aware of what to display in those regions. However, as per [Brian Mann's](https://www.youtube.com/watch?v=qWr7x9wk6_c) brilliant video, it seems that the controller is meant to live within an app module and is the place where you would end up writing most of your code.
+3. Integrated [handlebars](http://handlebarsjs.com/) into bootnette. Best practices guide that you should not emebed script like code in your markup. That makes underscore templating a big no no.
+
 ### Apr 28
 ----
 1. Attempted to [visualize OAUTH 2](http://ryansukale.com/viz/oauth.svg) . I found the articles [here](http://hueniverse.com/oauth/guide/workflow/) and [here](http://goo.gl/3kDzeZ) pretty useful.
