@@ -2,6 +2,17 @@
 
 ## Wanderings and learnings : April 2014
 
+### Apr 30
+----
+1. Working on bootnette, created a Marionette controller. Its still not a controller in its true sense. I still need to figure out an optimum strategy to create and initialize views, be it file structure or initialization.
+* Used handlebars templates with Marionettejs views based upon [this SO](http://stackoverflow.com/questions/15703896/use-handlebars-js-with-backbone-marionette) question.
+* David Sulc seems to have written a [nice companion project](https://github.com/davidsulc/marionette-gentle-introduction/) to his [book](https://leanpub.com/marionette-gentle-introduction). But the [index.html](https://github.com/davidsulc/marionette-gentle-introduction/blob/master/index.html) looks really ugly due to all of the script tags. At the moment, I am not entirely convinced that this is the best way to organize modules.
+* Realized that the App is like the godfather object. Thats the reason why you define regions on the App. These regions are then used by the other modules to carry out their work.
+* A backbone view does not work with an arbitrary JSON object as a model. You need to pass in a Backbone model, else the render function is not defined.
+* [Marionette.View](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.view.md) is not supposed to be used directly. You gotta use the other subclasses like [Marionette.ItemView](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.itemview.md#marionetteitemview).
+* Came across this [nifty little series](http://dailyjs.com/2012/11/29/backbone-tutorial-1/) from dailyjs for backbonejs.
+* Read up a little bit on the [Marionette.AppRouter](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.approuter.md) object. Its one of the opcoming things to do in bootnette.
+
 ### Apr 29
 ----
 1. After getting a feeling that I was simply overloading the simplicity of [bootcamp](https://github.com/ryansukale/bootcamp) by adding marionettejs to it, I decided to shift the marionettejs branch to a whole new repository. Marionettejs is really good for building large scale SPA and if you are simply creating a moderately sized application, you should not have to use all of the default setup of marionette objects. Hence is born - [bootnette](https://github.com/ryansukale/bootnette). A spin off from bootcamp which draws upon bootcamp and extends it for integration with marionettejs. I am not sure what this project will finally evolve into, but I hope it at least turns into a good chunk of reusable code and patterns that can be used in many marionettjs/bootstrap based SPA's.

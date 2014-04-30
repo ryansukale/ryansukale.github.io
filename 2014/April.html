@@ -754,6 +754,19 @@ body .task-list{
 <a name="user-content-wanderings-and-learnings--april-2014" class="anchor" href="#wanderings-and-learnings--april-2014"><span class="octicon octicon-link"></span></a>Wanderings and learnings : April 2014</h2>
 
 <h3>
+<a name="user-content-apr-30" class="anchor" href="#apr-30"><span class="octicon octicon-link"></span></a>Apr 30</h3>
+
+<hr><ol>
+<li>Working on bootnette, created a Marionette controller. Its still not a controller in its true sense. I still need to figure out an optimum strategy to create and initialize views, be it file structure or initialization.</li>
+<li>Used handlebars templates with Marionettejs views based upon <a href="http://stackoverflow.com/questions/15703896/use-handlebars-js-with-backbone-marionette">this SO</a> question.</li>
+<li>David Sulc seems to have written a <a href="https://github.com/davidsulc/marionette-gentle-introduction/">nice companion project</a> to his <a href="https://leanpub.com/marionette-gentle-introduction">book</a>. But the <a href="https://github.com/davidsulc/marionette-gentle-introduction/blob/master/index.html">index.html</a> looks really ugly due to all of the script tags. At the moment, I am not entirely convinced that this is the best way to organize modules.</li>
+<li>Realized that the App is like the godfather object. Thats the reason why you define regions on the App. These regions are then used by the other modules to carry out their work.</li>
+<li>A backbone view does not work with an arbitrary JSON object as a model. You need to pass in a Backbone model, else the render function is not defined.</li>
+<li>
+<a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.view.md">Marionette.View</a> is not supposed to be used directly. You gotta use the other subclasses like <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.itemview.md#marionetteitemview">Marionette.ItemView</a>.</li>
+<li>Came across this <a href="http://dailyjs.com/2012/11/29/backbone-tutorial-1/">nifty little series</a> from dailyjs for backbonejs.</li>
+<li>Read up a little bit on the <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.approuter.md">Marionette.AppRouter</a> object. Its one of the opcoming things to do in bootnette.</li>
+</ol><h3>
 <a name="user-content-apr-29" class="anchor" href="#apr-29"><span class="octicon octicon-link"></span></a>Apr 29</h3>
 
 <hr><ol>
