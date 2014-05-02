@@ -2,6 +2,8 @@
 
 ## Wanderings and learnings : April 2014
 
+If you are trying to do something similar and are facing issues, reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
+
 ### Apr 30
 ----
 1. Working on bootnette, created a Marionette controller. Its still not a controller in its true sense. I still need to figure out an optimum strategy to create and initialize views, be it file structure or initialization.
@@ -12,6 +14,7 @@
 * [Marionette.View](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.view.md) is not supposed to be used directly. You gotta use the other subclasses like [Marionette.ItemView](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.itemview.md#marionetteitemview).
 * Came across this [nifty little series](http://dailyjs.com/2012/11/29/backbone-tutorial-1/) from dailyjs for backbonejs.
 * Read up a little bit on the [Marionette.AppRouter](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.approuter.md) object. Its one of the opcoming things to do in bootnette.
+* There are two ways [1](http://www.php.net/manual/en/language.variables.scope.php) [2](http://www.php.net/manual/en/reserved.variables.globals.php) to declare globals in php. You will need to do this if you want to access global variables within your functions.
 
 ### Apr 29
 ----
