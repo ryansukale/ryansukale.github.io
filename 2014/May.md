@@ -4,6 +4,12 @@
 
 If you are trying to do something similar and are facing issues, reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
 
+
+### May 04
+----
+1. Had been busy writing my final project report and paper the past two days. Got back on track today and did some experimenting with marionettejs for bootnette. Turns out, the hash urls that backbone history listens to only get triggered if you run your application from a server. i.e. trying to test it by opening the file from your local hard drive does not work.
+* I created visualization for nginx configuration and [here's the raw svg file](http://ryansukale.com/viz/nginx-multi-site-config.svg). When I finished it and opened it in the browser, none of the text was being rendered. Turns out that any text that you create by using a flow, i.e. dragging and dropping a block does not effectively render due to [some pending changes in the SVG spec](http://wiki.inkscape.org/wiki/index.php/FAQ#What_about_flowed_text.3F).
+
 ### May 01
 ----
 1. Experimented integrating dustjs with Marionettejs. You need to use [this plugin](https://github.com/simonblee/marionette-dust). The [AMD version](https://github.com/simonblee/marionette-dust/blob/master/src/amd/backbone.marionette.dust.js). After integrating, you not only need to compile but also loadSource before you can actually use the template. And moreover, you use the template by name. This strategy makes you want to precompile and load all of your dust templates before usage. Still debating whether I should drop handlebars in bottnette. Most likely I will.
