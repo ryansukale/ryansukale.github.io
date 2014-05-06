@@ -4,6 +4,12 @@
 
 If you are trying to do something similar and are facing issues, reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
 
+### May 06
+----
+1. Was reading about the promises from [this article](http://www.html5rocks.com/en/tutorials/es6/promises/). I remember doing similar stuff using jQuery deferreds a long long time ago, but did not really have a chance to look into the new implementation until now.
+* There's a function called [reduce](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) on array objects in the ECMAScript 5 standard. Pretty cool.
+* Read something about the revealing constructor pattern in [this blog post](http://domenic.me/2014/02/14/the-revealing-constructor-pattern/) by Domenic Denicola. Need to learn more about it.
+* Came to know that there is something called as an [octopress](http://octopress.org/) blogging framework built upon jekyll. Also, this thing works with disqus and [here's and article](http://asaf.github.io/blog/2013/07/08/blogging-with-octopress-add-comments/) that tells you how to set it up.
 
 ### May 04
 ----
