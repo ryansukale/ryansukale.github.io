@@ -6,7 +6,7 @@ If you are trying to do something similar and are facing issues, reach out to me
 
 ### May 13
 ---
-1 Found a good set of series on nodejs at [dailyjs](http://dailyjs.com/tags.html).
+1. Found a good set of series on nodejs at [dailyjs](http://dailyjs.com/tags.html).
 * Was trying to figure out how to send emails from your own server and domain using nodejs. There's a nodejs package called [nodemailer](http://documentup.com/andris9/nodemailer) that lets you do that..... well almost. You also got to install either of sendmail or postfix before you do that.
 * SMPT servers listen on port 25. Your DO droplet does not come with an SMTP server installed. You can verify this by typing `telnet localhost 25`. If you get an error message saying that connection refused, you will need to install either sendmail or postfix.
 * Lets say you installed sendmail using `sudo apt-get install sendmail`, and you then test it out using the command - 'telnet localhost 25', its will get you connected but the prompt never ends. You can end it by pressing `Ctrl+]`. That takes you to the telnet prompt. To get out fo that type `close` or `quit`. And thats how you come out of your telnet shell. [Telnet command reference](http://unixhelp.ed.ac.uk/tables/telnet_commands.html).

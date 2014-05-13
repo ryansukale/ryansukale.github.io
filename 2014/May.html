@@ -753,14 +753,13 @@ body .task-list{
 <h2>
 <a name="user-content-wanderings-and-learnings--may-2014" class="anchor" href="#wanderings-and-learnings--may-2014"><span class="octicon octicon-link"></span></a>Wanderings and learnings : May 2014</h2>
 
-<p>If you are trying to do something similar and are facing issues, reach out to me via my contact details available at <strong><a href="http://ryansukale.com">ryansukale.com</a></strong>.</p>
+<p>If you are trying to do somethPing similar and are facing issues, reach out to me via my contact details available at <strong><a href="http://ryansukale.com">ryansukale.com</a></strong>.</p>
 
 <h3>
 <a name="user-content-may-13" class="anchor" href="#may-13"><span class="octicon octicon-link"></span></a>May 13</h3>
 
-<hr><p>1 Found a good set of series on nodejs at <a href="http://dailyjs.com/tags.html">dailyjs</a>.</p>
-
-<ul>
+<hr><ol>
+<li>Found a good set of series on nodejs at <a href="http://dailyjs.com/tags.html">dailyjs</a>.</li>
 <li>Was trying to figure out how to send emails from your own server and domain using nodejs. There's a nodejs package called <a href="http://documentup.com/andris9/nodemailer">nodemailer</a> that lets you do that..... well almost. You also got to install either of sendmail or postfix before you do that.</li>
 <li>SMPT servers listen on port 25. Your DO droplet does not come with an SMTP server installed. You can verify this by typing <code>telnet localhost 25</code>. If you get an error message saying that connection refused, you will need to install either sendmail or postfix.</li>
 <li>Lets say you installed sendmail using <code>sudo apt-get install sendmail</code>, and you then test it out using the command - 'telnet localhost 25', its will get you connected but the prompt never ends. You can end it by pressing <code>Ctrl+]</code>. That takes you to the telnet prompt. To get out fo that type <code>close</code> or <code>quit</code>. And thats how you come out of your telnet shell. <a href="http://unixhelp.ed.ac.uk/tables/telnet_commands.html">Telnet command reference</a>.</li>
@@ -771,7 +770,7 @@ body .task-list{
 <li>If you just want to install postfix, just follow <a href="https://www.digitalocean.com/community/articles/how-to-install-and-setup-postfix-on-ubuntu-12-04">these instructions</a>.</li>
 <li>When you install sendmail, it automatically starts. To stop it, type the command - <code>sudo /etc/init.d/sendmail stop</code>. To restart it, use its counterpart - <code>sudo /etc/init.d/sendmail start</code>.</li>
 <li>Also read a bit about a powerful ORM solution for Nodejs - <a href="http://bookshelfjs.org/">Bookshelfjs</a>. I had used <a href="http://sequelizejs.com/">sequelizejs</a> before but I wanted to explore something else this time. I had a use case where I needed to use a composite prmary key and Sequelize didnt do that for me so....</li>
-</ul><h3>
+</ol><h3>
 <a name="user-content-may-12" class="anchor" href="#may-12"><span class="octicon octicon-link"></span></a>May 12</h3>
 
 <hr><ol>
