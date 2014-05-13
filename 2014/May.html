@@ -756,6 +756,51 @@ body .task-list{
 <p>If you are trying to do something similar and are facing issues, reach out to me via my contact details available at <strong><a href="http://ryansukale.com">ryansukale.com</a></strong>.</p>
 
 <h3>
+<a name="user-content-may-13" class="anchor" href="#may-13"><span class="octicon octicon-link"></span></a>May 13</h3>
+
+<hr><p>1 Found a good set of series on nodejs at <a href="http://dailyjs.com/tags.html">dailyjs</a>.</p>
+
+<ul>
+<li>Was trying to figure out how to send emails from your own server and domain using nodejs. There's a nodejs package called <a href="http://documentup.com/andris9/nodemailer">nodemailer</a> that lets you do that..... well almost. You also got to install either of sendmail or postfix before you do that.</li>
+<li>SMPT servers listen on port 25. Your DO droplet does not come with an SMTP server installed. You can verify this by typing <code>telnet localhost 25</code>. If you get an error message saying that connection refused, you will need to install either sendmail or postfix.</li>
+<li>Lets say you installed sendmail using <code>sudo apt-get install sendmail</code>, and you then test it out using the command - 'telnet localhost 25', its will get you connected but the prompt never ends. You can end it by pressing <code>Ctrl+]</code>. That takes you to the telnet prompt. To get out fo that type <code>close</code> or <code>quit</code>. And thats how you come out of your telnet shell. <a href="http://unixhelp.ed.ac.uk/tables/telnet_commands.html">Telnet command reference</a>.</li>
+<li>
+<a href="http://wiki2.dovecot.org/MailServerOverview">Here's</a> a niftly little overview of how email transfers take place and the roles of an MTA and and MUA.</li>
+<li>
+<a href="https://www.digitalocean.com/community/articles/how-to-set-up-a-postfix-e-mail-server-with-dovecot">Here's</a> how you would set up a postfix email server with dovecot on an ubuntu droplet on digital ocean.</li>
+<li>If you just want to install postfix, just follow <a href="https://www.digitalocean.com/community/articles/how-to-install-and-setup-postfix-on-ubuntu-12-04">these instructions</a>.</li>
+<li>When you install sendmail, it automatically starts. To stop it, type the command - <code>sudo /etc/init.d/sendmail stop</code>. To restart it, use its counterpart - <code>sudo /etc/init.d/sendmail start</code>.</li>
+<li>Also read a bit about a powerful ORM solution for Nodejs - <a href="http://bookshelfjs.org/">Bookshelfjs</a>. I had used <a href="http://sequelizejs.com/">sequelizejs</a> before but I wanted to explore something else this time. I had a use case where I needed to use a composite prmary key and Sequelize didnt do that for me so....</li>
+</ul><h3>
+<a name="user-content-may-12" class="anchor" href="#may-12"><span class="octicon octicon-link"></span></a>May 12</h3>
+
+<hr><ol>
+<li>Came across a neat <a href="http://vimeo.com/58797363">video on Marionettejs</a> by Brian Mann on vimeo. It made me want to explore a bit more about the Marionettejs Views. The 3 different types of views- <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.itemview.md">ItemView</a>, <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.collectionview.md">CollectionView</a> and the <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.compositeview.md">CompositeView</a> have a very specific purpose. They all inherit from the parent class <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.view.md">View</a>.</li>
+<li>There also seems to be a <a href="https://www.artandlogic.com/blog/2013/03/a-visual-guide-to-marionette-js-views/">visual guide to Marionettejs</a> although the visualization could use some help.</li>
+<li>Also learnt that Marionette provides a ui hash to quickly select sub-sections in your view. These can be used in two ways - as shown <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.itemview.md#organizing-ui-elements">here</a> in the onRender method and <a href="https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.view.md#viewevents">here</a> during event mapping.</li>
+<li>Also came across an interesting blog post comparing <a href="http://www.keltdockins.com/2/post/2014/04/which-javascript-framework-to-use-angular-vs-ember-vs-marionette.html">angular vs ember vs marionettejs</a>.</li>
+</ol><h3>
+<a name="user-content-may-09" class="anchor" href="#may-09"><span class="octicon octicon-link"></span></a>May 09</h3>
+
+<hr><ol>
+<li>Found a small but good <a href="http://www.jankoatwarpspeed.com/free-sketching-wireframing-kit/">resource</a> with a few svg icons that can comein handy for wireframing.</li>
+<li>
+<a href="http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module">A SO question</a> that basically talks about how one should use postgresql by the author of postgresql itself.</li>
+</ol><h3>
+<a name="user-content-may-08" class="anchor" href="#may-08"><span class="octicon octicon-link"></span></a>May 08</h3>
+
+<hr><ol>
+<li>Setup <a href="https://www.npmjs.org/package/node-inspector">node-inspector</a> on my windows machine.</li>
+<li> Installed mongodb on my windows machhine. Got it up and running.</li>
+<li> Was reading a couple of tuts on using mongodb with expressjs. Came across this cool <a href="https://github.com/azat-co/mongoui">mongoui</a> project which is a phpadmin like interface for mongodb. Also came across <a href="https://github.com/LearnBoost/monk">monk</a>.</li>
+<li> Found <a href="http://webapplog.com/intro-to-express-js-simple-rest-api-app-with-monk-and-mongodb/">this article</a> by the guy who wrote mongoui. <a href="http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/">Here's</a> another good tut on using expressjs with mongodb.</li>
+<li> Learnt how to <del>strikethrough</del> text in markdown.</li>
+</ol><h3>
+<a name="user-content-may-07" class="anchor" href="#may-07"><span class="octicon octicon-link"></span></a>May 07</h3>
+
+<hr><ol>
+<li>Read up on the javascript mixin pattern and the javascript decorator pattern.</li>
+</ol><h3>
 <a name="user-content-may-06" class="anchor" href="#may-06"><span class="octicon octicon-link"></span></a>May 06</h3>
 
 <hr><ol>

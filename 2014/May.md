@@ -4,6 +4,46 @@
 
 If you are trying to do something similar and are facing issues, reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
 
+### May 13
+---
+1 Found a good set of series on nodejs at [dailyjs](http://dailyjs.com/tags.html).
+* Was trying to figure out how to send emails from your own server and domain using nodejs. There's a nodejs package called [nodemailer](http://documentup.com/andris9/nodemailer) that lets you do that..... well almost. You also got to install either of sendmail or postfix before you do that.
+* SMPT servers listen on port 25. Your DO droplet does not come with an SMTP server installed. You can verify this by typing `telnet localhost 25`. If you get an error message saying that connection refused, you will need to install either sendmail or postfix.
+* Lets say you installed sendmail using `sudo apt-get install sendmail`, and you then test it out using the command - 'telnet localhost 25', its will get you connected but the prompt never ends. You can end it by pressing `Ctrl+]`. That takes you to the telnet prompt. To get out fo that type `close` or `quit`. And thats how you come out of your telnet shell. [Telnet command reference](http://unixhelp.ed.ac.uk/tables/telnet_commands.html).
+* [Here's](http://wiki2.dovecot.org/MailServerOverview) a niftly little overview of how email transfers take place and the roles of an MTA and and MUA.
+* [Here's](https://www.digitalocean.com/community/articles/how-to-set-up-a-postfix-e-mail-server-with-dovecot) how you would set up a postfix email server with dovecot on an ubuntu droplet on digital ocean.
+* If you just want to install postfix, just follow [these instructions](https://www.digitalocean.com/community/articles/how-to-install-and-setup-postfix-on-ubuntu-12-04).
+* When you install sendmail, it automatically starts. To stop it, type the command - `sudo /etc/init.d/sendmail stop`. To restart it, use its counterpart - `sudo /etc/init.d/sendmail start`.
+* Also read a bit about a powerful ORM solution for Nodejs - [Bookshelfjs](http://bookshelfjs.org/). I had used [sequelizejs](http://sequelizejs.com/) before but I wanted to explore something else this time. I had a use case where I needed to use a composite prmary key and Sequelize didnt do that for me so....
+
+
+
+### May 12
+---
+1. Came across a neat [video on Marionettejs](http://vimeo.com/58797363) by Brian Mann on vimeo. It made me want to explore a bit more about the Marionettejs Views. The 3 different types of views- [ItemView](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.itemview.md), [CollectionView](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.collectionview.md) and the [CompositeView](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.compositeview.md) have a very specific purpose. They all inherit from the parent class [View](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.view.md).
+* There also seems to be a [visual guide to Marionettejs](https://www.artandlogic.com/blog/2013/03/a-visual-guide-to-marionette-js-views/) although the visualization could use some help.
+* Also learnt that Marionette provides a ui hash to quickly select sub-sections in your view. These can be used in two ways - as shown [here](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.itemview.md#organizing-ui-elements) in the onRender method and [here](https://github.com/marionettejs/backbone.marionette/blob/master/docs/marionette.view.md#viewevents) during event mapping.
+* Also came across an interesting blog post comparing [angular vs ember vs marionettejs](http://www.keltdockins.com/2/post/2014/04/which-javascript-framework-to-use-angular-vs-ember-vs-marionette.html).
+
+
+### May 09
+----
+1. Found a small but good [resource](http://www.jankoatwarpspeed.com/free-sketching-wireframing-kit/) with a few svg icons that can comein handy for wireframing.
+* [A SO question](http://stackoverflow.com/questions/8484404/what-is-the-proper-way-to-use-the-node-js-postgresql-module) that basically talks about how one should use postgresql by the author of postgresql itself.
+
+### May 08
+----
+1. Setup [node-inspector](https://www.npmjs.org/package/node-inspector) on my windows machine.
+*  Installed mongodb on my windows machhine. Got it up and running.
+*  Was reading a couple of tuts on using mongodb with expressjs. Came across this cool [mongoui](https://github.com/azat-co/mongoui) project which is a phpadmin like interface for mongodb. Also came across [monk](https://github.com/LearnBoost/monk).
+*  Found [this article](http://webapplog.com/intro-to-express-js-simple-rest-api-app-with-monk-and-mongodb/) by the guy who wrote mongoui. [Here's](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/) another good tut on using expressjs with mongodb.
+*  Learnt how to ~~strikethrough~~ text in markdown.
+
+
+### May 07
+----
+1. Read up on the javascript mixin pattern and the javascript decorator pattern.
+
 ### May 06
 ----
 1. Was reading about the promises from [this article](http://www.html5rocks.com/en/tutorials/es6/promises/). I remember doing similar stuff using jQuery deferreds a long long time ago, but did not really have a chance to look into the new implementation until now.
