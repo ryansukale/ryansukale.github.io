@@ -8,5 +8,5 @@ These are some of the things that Ive experimented with in my free time. *Click 
 ----
 |Month|Summary|
 |----|----|
-|**[May 2014](http://ryansukale.github.io/2014/May.html)** | Current |
+|**[May 2014](http://ryansukale.github.io/2014/May.html)** | **Ongoing:**  *Gruntjs, Marionette Views, Node Inspector, NGINX visualization, Marionette+dust, Marionette Controllers* |
 |**[April 2014](http://ryansukale.github.io/2014/April.html)** | Key learnings - *Marionettejs, Module pattern, Mediator Pattern, Ghost blog setup, NGINX setup for multiple sites, Visualizing OAUTH 2, Markdown* |

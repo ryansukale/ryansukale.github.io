@@ -15,6 +15,14 @@ If you are trying to do something similar and are facing issues, reach out to me
 * If you just want to install postfix, just follow [these instructions](https://www.digitalocean.com/community/articles/how-to-install-and-setup-postfix-on-ubuntu-12-04).
 * When you install sendmail, it automatically starts. To stop it, type the command - `sudo /etc/init.d/sendmail stop`. To restart it, use its counterpart - `sudo /etc/init.d/sendmail start`.
 * Also read a bit about a powerful ORM solution for Nodejs - [Bookshelfjs](http://bookshelfjs.org/). I had used [sequelizejs](http://sequelizejs.com/) before but I wanted to explore something else this time. I had a use case where I needed to use a composite prmary key and Sequelize didnt do that for me so....
+* Learnt a little bit about gruntjs for automating tasks. Yet to use it in a project, so I still need to face some real time hassles. The basic idea of grunt is pretty simple - create a grunt config file, specify certain tasks and their [configuration](http://gruntjs.com/configuring-tasks) and then run the grunt command. Here's a [sample grunt configuration](http://gruntjs.com/sample-gruntfile) file.
+* Also found this cool [interactive explanation of package.json](http://package.json.nodejitsu.com/).
+* Guess what, if you do `npm install --save modulename` it writes the module to your package.json dependencies along wit a version number. If you run `npm install --save-dev modulename` it add the module to your package.json in your devDependencies. Grunt and its plugins go inside devDependencies in your package.json
+* Watched a simple video on nodejs [EventEmitters](http://nodetuts.com/03-event-emitter.html). Didnt find a major different from the the jQuery.on function. Its all the same so far. Nor sure if namespacing events is allowed though.
+* Learnt about something called as a ** [screen session](http://nodeguide.com/beginner.html#quick-dirty-deployment). **
+* Learnt about 3 critical grunt packages - * [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) * for minifying your js files, and * [grunt-config-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) * for minifying your CSS files and * [grunt-config-jshint](https://github.com/gruntjs/grunt-contrib-jshint) * for validating your javascript.
+* Found a [nice cheatsheet](http://blog.nodejitsu.com/npm-cheatsheet/) on NPM.
+* Came across [momentjs](http://momentjs.com/) . Found it to be pretty cool!.
 
 
 
