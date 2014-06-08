@@ -26,15 +26,12 @@ If you are trying to do something similar and are facing issues, reach out to me
 1. Read about the Command Pattern, Facade Pattern, Factory Pattern and the Mixin pattern from [Addy's online book](http://addyosmani.com/resources/essentialjsdesignpatterns/book/).
 
 
-# May 16
+### May 16
 1. Learnt that there is a 'multiple' property the file input. It just never occured to me that this wasnt the default behaviour. [Learn more](http://davidwalsh.name/multiple-file-upload).
 * The multiparty module is perhaps the simplest way to implement a file upload. You will need to regularly clean up your temp directory though when using multiparty. [Learn more](http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html).
 * Moved my personal website to digital ocean and converted it to a nodejs website.
 * Learnt about the [forever command](http://blog.nodejitsu.com/keep-a-nodejs-server-up-with-forever/) to run if you need to run your node app continously, which is the case for me since I want my profile site to be running 24x7. Its not as if its is supposed to crash ever. It mainly just has some sugarcoated static content.
 * If you need to environment parameters arguments for your program, you need to specify them before the forever command.
-
-
-### May 15
 
 
 ### May 13
