@@ -6,7 +6,8 @@ These are some of the things that Ive experimented with in my free time. *Click 
 
 2014
 ----
-|Month|Summary|
+|Month|Summary/Key learnings|
 |----|----|
-|**[May 2014](http://ryansukale.github.io/2014/May.html)** | Key learnings  *Gruntjs, Marionette Views, Node Inspector, NGINX visualization, Marionette+dust, Marionette Controllers, Postgresql setup on ubuntu* |
-|**[April 2014](http://ryansukale.github.io/2014/April.html)** | Key learnings - *Marionettejs, Module pattern, Mediator Pattern, Ghost blog setup, NGINX setup for multiple sites, Visualizing OAUTH 2, Markdown* |
+|**[June 2014](http://ryansukale.github.io/2014/June.html)** | **Ongoing**  *Gruntjs*|
+|**[May 2014](http://ryansukale.github.io/2014/May.html)** | *Gruntjs, Marionette Views, Node Inspector, NGINX visualization, Marionette+dust, Marionette Controllers, Postgresql setup on ubuntu* |
+|**[April 2014](http://ryansukale.github.io/2014/April.html)** | *Marionettejs, Module pattern, Mediator Pattern, Ghost blog setup, NGINX setup for multiple sites, Visualizing OAUTH 2, Markdown* |
