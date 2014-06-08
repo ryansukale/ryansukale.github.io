@@ -4,6 +4,39 @@
 
 If you are trying to do something similar and are facing issues, reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
 
+### May 22
+1. In postgresql, User is a key word, so you cannot create a table by that name[Ref](http://www.postgresql.org/message-id/Pine.NEB.4.10.10008291649550.4357-100000@scimitar.caravan.com).
+
+###May 21
+1. Read up chapter 4 from Secrets of the Javascript ninja. Found it pretty cool actually. Plenty of brain twisters this time.
+2. Refreshed my memory on the fact that all js objects have a constructor property. But I realized there is a really simple way to execute expressions when testing on the fly. For e.g. if you type `{}.constructor` on the console, you get an error. However, if you type `({}).constructor` it prints alright.
+3. Also learnt that the Number class has a cool toString which lets you specify the radix. I had never actually had to use this before. E.g `(10).toString(16)`
+4. Just as a note to self : Array.shift is the counterpart to Array.pop and Array.unshift is the counterpart of Array.push. They just work on the opposite ends of the array.
+5. Revisiting Douglas Crockford's JS the good parts. That book never ceases to amuse me.
+
+
+###May 20
+1. Read Ch2, Ch3 on Secrets of the Javascript ninja. Didn't feel like they were a difficult read at all though. Looking forward to the next few chapters.
+
+###May 19
+1. Using PostgreSQL for the first time. Setup it up on a DigitalOcean vps and wrote a small blog post about it.
+
+
+###May 18
+1. Read about the Command Pattern, Facade Pattern, Factory Pattern and the Mixin pattern from [Addy's online book](http://addyosmani.com/resources/essentialjsdesignpatterns/book/).
+
+
+# May 16
+1. Learnt that there is a 'multiple' property the file input. It just never occured to me that this wasnt the default behaviour. [Learn more](http://davidwalsh.name/multiple-file-upload).
+* The multiparty module is perhaps the simplest way to implement a file upload. You will need to regularly clean up your temp directory though when using multiparty. [Learn more](http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html).
+* Moved my personal website to digital ocean and converted it to a nodejs website.
+* Learnt about the [forever command](http://blog.nodejitsu.com/keep-a-nodejs-server-up-with-forever/) to run if you need to run your node app continously, which is the case for me since I want my profile site to be running 24x7. Its not as if its is supposed to crash ever. It mainly just has some sugarcoated static content.
+* If you need to environment parameters arguments for your program, you need to specify them before the forever command.
+
+
+### May 15
+
+
 ### May 13
 ---
 1. Found a good set of series on nodejs at [dailyjs](http://dailyjs.com/tags.html).
@@ -23,6 +56,7 @@ If you are trying to do something similar and are facing issues, reach out to me
 * Learnt about 3 critical grunt packages - * [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify) * for minifying your js files, and * [grunt-config-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin) * for minifying your CSS files and * [grunt-config-jshint](https://github.com/gruntjs/grunt-contrib-jshint) * for validating your javascript.
 * Found a [nice cheatsheet](http://blog.nodejitsu.com/npm-cheatsheet/) on NPM.
 * Came across [momentjs](http://momentjs.com/) . Found it to be pretty cool!.
+* Watched the [breakpoint episode 4](https://www.youtube.com/watch?v=WpqZ0LjNU5A). So, it seems like the timeout for a jQuery animation does not sync up well with the browser refresh rate. And thats exactly you probably want to use the [jQuery-requestAnimationFrame plugin](https://github.com/gnarf/jquery-requestAnimationFrame) wherever applicable.
 
 
 

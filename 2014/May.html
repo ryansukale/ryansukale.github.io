@@ -756,6 +756,48 @@ body .task-list{
 <p>If you are trying to do something similar and are facing issues, reach out to me via my contact details available at <strong><a href="http://ryansukale.com">ryansukale.com</a></strong>.</p>
 
 <h3>
+<a name="user-content-may-22" class="anchor" href="#may-22"><span class="octicon octicon-link"></span></a>May 22</h3>
+
+<ol>
+<li>In postgresql, User is a key word, so you cannot create a table by that name<a href="http://www.postgresql.org/message-id/Pine.NEB.4.10.10008291649550.4357-100000@scimitar.caravan.com">Ref</a>.</li>
+</ol><h3>
+<a name="user-content-may-21" class="anchor" href="#may-21"><span class="octicon octicon-link"></span></a>May 21</h3>
+
+<ol>
+<li>Read up chapter 4 from Secrets of the Javascript ninja. Found it pretty cool actually. Plenty of brain twisters this time.</li>
+<li>Refreshed my memory on the fact that all js objects have a constructor property. But I realized there is a really simple way to execute expressions when testing on the fly. For e.g. if you type <code>{}.constructor</code> on the console, you get an error. However, if you type <code>({}).constructor</code> it prints alright.</li>
+<li>Also learnt that the Number class has a cool toString which lets you specify the radix. I had never actually had to use this before. E.g <code>(10).toString(16)</code>
+</li>
+<li>Just as a note to self : Array.shift is the counterpart to Array.pop and Array.unshift is the counterpart of Array.push. They just work on the opposite ends of the array.</li>
+<li>Revisiting Douglas Crockford's JS the good parts. That book never ceases to amuse me.</li>
+</ol><h3>
+<a name="user-content-may-20" class="anchor" href="#may-20"><span class="octicon octicon-link"></span></a>May 20</h3>
+
+<ol>
+<li>Read Ch2, Ch3 on Secrets of the Javascript ninja. Didn't feel like they were a difficult read at all though. Looking forward to the next few chapters.</li>
+</ol><h3>
+<a name="user-content-may-19" class="anchor" href="#may-19"><span class="octicon octicon-link"></span></a>May 19</h3>
+
+<ol>
+<li>Using PostgreSQL for the first time. Setup it up on a DigitalOcean vps and wrote a small blog post about it.</li>
+</ol><h3>
+<a name="user-content-may-18" class="anchor" href="#may-18"><span class="octicon octicon-link"></span></a>May 18</h3>
+
+<ol>
+<li>Read about the Command Pattern, Facade Pattern, Factory Pattern and the Mixin pattern from <a href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Addy's online book</a>.</li>
+</ol><h1>
+<a name="user-content-may-16" class="anchor" href="#may-16"><span class="octicon octicon-link"></span></a>May 16</h1>
+
+<ol>
+<li>Learnt that there is a 'multiple' property the file input. It just never occured to me that this wasnt the default behaviour. <a href="http://davidwalsh.name/multiple-file-upload">Learn more</a>.</li>
+<li>The multiparty module is perhaps the simplest way to implement a file upload. You will need to regularly clean up your temp directory though when using multiparty. <a href="http://andrewkelley.me/post/do-not-use-bodyparser-with-express-js.html">Learn more</a>.</li>
+<li>Moved my personal website to digital ocean and converted it to a nodejs website.</li>
+<li>Learnt about the <a href="http://blog.nodejitsu.com/keep-a-nodejs-server-up-with-forever/">forever command</a> to run if you need to run your node app continously, which is the case for me since I want my profile site to be running 24x7. Its not as if its is supposed to crash ever. It mainly just has some sugarcoated static content.</li>
+<li>If you need to environment parameters arguments for your program, you need to specify them before the forever command.</li>
+</ol><h3>
+<a name="user-content-may-15" class="anchor" href="#may-15"><span class="octicon octicon-link"></span></a>May 15</h3>
+
+<h3>
 <a name="user-content-may-13" class="anchor" href="#may-13"><span class="octicon octicon-link"></span></a>May 13</h3>
 
 <hr><ol>
@@ -778,6 +820,7 @@ body .task-list{
 <li>Learnt about 3 critical grunt packages - * <a href="https://github.com/gruntjs/grunt-contrib-uglify">grunt-contrib-uglify</a> * for minifying your js files, and * <a href="https://github.com/gruntjs/grunt-contrib-cssmin">grunt-config-cssmin</a> * for minifying your CSS files and * <a href="https://github.com/gruntjs/grunt-contrib-jshint">grunt-config-jshint</a> * for validating your javascript.</li>
 <li>Found a <a href="http://blog.nodejitsu.com/npm-cheatsheet/">nice cheatsheet</a> on NPM.</li>
 <li>Came across <a href="http://momentjs.com/">momentjs</a> . Found it to be pretty cool!.</li>
+<li>Watched the <a href="https://www.youtube.com/watch?v=WpqZ0LjNU5A">breakpoint episode 4</a>. So, it seems like the timeout for a jQuery animation does not sync up well with the browser refresh rate. And thats exactly you probably want to use the <a href="https://github.com/gnarf/jquery-requestAnimationFrame">jQuery-requestAnimationFrame plugin</a> wherever applicable.</li>
 </ol><h3>
 <a name="user-content-may-12" class="anchor" href="#may-12"><span class="octicon octicon-link"></span></a>May 12</h3>
 
