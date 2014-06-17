@@ -15,3 +15,6 @@ If you are trying to do something similar and are facing issues, reach out to me
 
 ###June 08
 - Spent the whole day configuring and installing ubuntu on my virtual box to work with my mac as per my preferences. Finally wrote a [blog post](http://blog.ryansukale.com/setting-up-an-ubuntu-vm-on-a-mac-for-folder-sharing-but-separate-environments/) about it.
+
+###June 07
+- Read up [javascript promises](http://www.html5rocks.com/en/tutorials/es6/promises/).
