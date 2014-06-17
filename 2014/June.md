@@ -1,6 +1,17 @@
 **[ < - Back To Home](http://ryansukale.github.io)**
 
-## Wanderings and learnings : May 2014
+## Wanderings and learnings : June 2014
 
 If you are trying to do something similar and are facing issues, reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
 
+###June 15
+- Learnt that `git add -u` will only stage the tracked files.
+- You can list the names of files in a git branch by `git ls-tree -r <branch_name> --name-only` ( [Ref](http://stackoverflow.com/a/1910822/226953)  )
+- You can just checkout specific files from another branch by `git checkout branchname -- filename`  ([Ref](http://stackoverflow.com/a/2364223/226953))
+- Created an annotated tag with a very clear purpose for the first time.
+- Learnt that git merge can merge multiple branches in a single command. ([Ref](http://stackoverflow.com/questions/16208144/how-do-i-merge-multiple-branches-into-master)).
+- [Reverting a branch merge](http://lostechies.com/derickbailey/2010/04/01/git-how-to-revert-a-branch-merge/) in git - `git reset --hard HEAD^`. Yes, you can even go wrong with merges.
+- Apparently Lodash [is way better](http://stackoverflow.com/questions/13789618/differences-between-lodash-and-underscore) than underscorejs.
+
+###June 08
+- Spent the whole day configuring and installing ubuntu on my virtual box to work with my mac as per my preferences. Finally wrote a [blog post](http://blog.ryansukale.com/setting-up-an-ubuntu-vm-on-a-mac-for-folder-sharing-but-separate-environments/) about it.
