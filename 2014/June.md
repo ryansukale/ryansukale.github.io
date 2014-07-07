@@ -5,7 +5,7 @@
 If you are trying to do something similar and are facing issues, reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
 
 ###June 26
--[This video](https://www.youtube.com/watch?v=XxVg_s8xAms) on Reactjs is really great. 
+- [This video](https://www.youtube.com/watch?v=XxVg_s8xAms) on Reactjs is really great. 
 -  I am gonna try my hand at making a small prototype for a project that I had been itching to make since quite a while using react in a day or two.
 
 ###June 25
