@@ -4,6 +4,19 @@
 
 Have questions? Reach out to me via my contact details available at **[ryansukale.com](http://ryansukale.com)**.
 
+###July 13
+- Found [this nice little grunt configuration](https://gist.github.com/slashdotdash/9102812) to watch for react files.
+- Read up a bit about Browserify.
+- [This one seems](http://www.thomasboyt.com/2013/12/17/using-reactjs-as-a-backbone-view.html) to contain a nice example as well for using react with backbone and some more links at the end that I did not get a chance to read.
+- Continue reading the d3js tips and tricks. This time the graph chapter seemed a lot more easier to understand.
+
+
+###July 12
+- Spent some time today revisiting Reactjs. Also came across a [tutorial series](https://medium.com/react-tutorials) on using react with other frameworks. The one feature that caught my eye was the ability to add [mixins](http://facebook.github.io/react/docs/reusable-components.html#mixins) to a react component to augment the component lifecycle. 
+- Was also reading through D3js tips and tricks.
+- Found this [neat cheat sheet](http://www.jeromecukier.net/wp-content/uploads/2012/10/d3-cheat-sheet.pdf) on d3js by Jerome Cukier. It at least makes things a bit more clearer.
+
+
 
 ###July 06
 - Spent a good part of my day learning about some d3js. Tried out the first chapter from the free ebook D3 [Tips and Tricks](https://leanpub.com/D3-Tips-and-Tricks) by Malcolm Maclean.
